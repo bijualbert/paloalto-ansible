@@ -1,0 +1,9 @@
+---
+- name: generate self signed certificate
+  panos_cert_gen_ssh:
+    ip_address: "{{ ip_address }}"
+    username: "{{ username }}"
+    password: "{{ password }}"
+    cert_cn: "{{ cn }}"
+    cert_friendly_name: "{{ friendly_name }}"
+    signed_by: "{{ signed_by }}"

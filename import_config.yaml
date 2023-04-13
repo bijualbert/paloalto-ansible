@@ -1,0 +1,8 @@
+---
+- name: import configuration file into PAN-OS
+  panos_import:
+    ip_address: "{{ ip_address }}"
+    username: "{{ username }}"
+    password: "{{ password }}"
+    file: "{{ config_file }}"
+    category: "configuration"
